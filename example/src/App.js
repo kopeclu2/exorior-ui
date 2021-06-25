@@ -4,6 +4,7 @@ import { BrowserRouter as Router } from 'react-router-dom';
 import { TwoButtons, Button, FormPageHeadingWithStepBack, FormTitle, GridRow , Typography, PageWrapper, Table, TableRow, TableCell, TableBodyCell, TextFieldComponent} from 'exorior-ui'
 import 'exorior-ui/dist/index.css'
 import { Divider, Grid, ThemeProvider } from "@material-ui/core";
+import FormExample from "./Form";
 const { createMuiTheme } = require('@material-ui/core');
 
 const theme = createMuiTheme({
@@ -132,7 +133,7 @@ const App = () => {
         <Grid item><Typography variant={"p"} > Ahoj svete</Typography> </Grid>
         <Grid item><Typography variant={"pBold"} > Ahoj svete</Typography> </Grid>
       </Grid>
-
+      <FormExample />
     </Router>
   </ThemeProvider>
 }
